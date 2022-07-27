@@ -15,6 +15,7 @@
 		84CD653D28918E270038937E /* DepartmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD653C28918E270038937E /* DepartmentView.swift */; };
 		84CD653F28918F8D0038937E /* DepartmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD653E28918F8D0038937E /* DepartmentViewModel.swift */; };
 		84CD65412891900D0038937E /* DepartmentApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD65402891900D0038937E /* DepartmentApiService.swift */; };
+		84CD6543289195700038937E /* DepartmentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD6542289195700038937E /* DepartmentsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		84CD653C28918E270038937E /* DepartmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentView.swift; sourceTree = "<group>"; };
 		84CD653E28918F8D0038937E /* DepartmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentViewModel.swift; sourceTree = "<group>"; };
 		84CD65402891900D0038937E /* DepartmentApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentApiService.swift; sourceTree = "<group>"; };
+		84CD6542289195700038937E /* DepartmentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				84CD652A289189D30038937E /* ContentView.swift */,
+				84CD6542289195700038937E /* DepartmentsListView.swift */,
 				84CD653C28918E270038937E /* DepartmentView.swift */,
 			);
 			path = View;
@@ -186,6 +189,7 @@
 				84CD6529289189D30038937E /* UniversityInformationApp.swift in Sources */,
 				84CD653D28918E270038937E /* DepartmentView.swift in Sources */,
 				84CD653F28918F8D0038937E /* DepartmentViewModel.swift in Sources */,
+				84CD6543289195700038937E /* DepartmentsListView.swift in Sources */,
 				84CD653B28918C4E0038937E /* DepartmentsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

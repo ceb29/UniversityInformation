@@ -8,28 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    var departments = ["test1", "test2"]
     @StateObject private var departmentsService = DepartmentApiService()
+    
     var body: some View {
         NavigationView(){
-            List{
-                ForEach(departmentsService.departments, id: \.self){department in
-                    NavigationLink(destination: DepartmentView()){
-                        VStack{
-                            HStack{
-                                Text("Dept Name: ")
-                                Text(department.deptName)
-                            }
-                            HStack{
-                                Text("Teachers: ")
-                                Text("Publications")
-                            }
-                        }
-                        
-                    }
-                }
-            }
-            .onAppear {departmentsService.getData()}
+            DepartmentsListView(departments: departmentsService.departments, error: departmentsService.error)
+                .onAppear {departmentsService.getData()}
+                //.navigationBarTitle("Departments", displayMode: .inline)
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

@@ -11,5 +11,5 @@ struct DepartmentViewModel: Hashable{
     var deptName : String
     var subjects : [String]
     var numberOfTeachers : Int
-    var numberofpublicationsPerYr : Int
+    var numberOfpublicationsPerYr : Int
 }

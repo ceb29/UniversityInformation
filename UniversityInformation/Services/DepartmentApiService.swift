@@ -51,8 +51,8 @@ class DepartmentApiService: ObservableObject{
                     if department.numberOfpublicationsPerYr == 0{
                         continue
                     }
-                    departmentViewModel.append(DepartmentViewModel(deptName: department.deptName, subjects: department.subjects, numberOfTeachers: department.numberOfTeachers, numberofpublicationsPerYr: department.numberOfpublicationsPerYr!))
-                    departmentViewModel = departmentViewModel.sorted {$0.numberofpublicationsPerYr > $1.numberofpublicationsPerYr}
+                    departmentViewModel.append(DepartmentViewModel(deptName: department.deptName, subjects: department.subjects, numberOfTeachers: department.numberOfTeachers, numberOfpublicationsPerYr: department.numberOfpublicationsPerYr!))
+                    departmentViewModel = departmentViewModel.sorted {$0.numberOfpublicationsPerYr > $1.numberOfpublicationsPerYr}
                 }
                 
                 DispatchQueue.main.async {

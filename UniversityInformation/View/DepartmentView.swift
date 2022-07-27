@@ -8,20 +8,18 @@
 import SwiftUI
 
 struct DepartmentView: View {
+    var departName : String
+    var subjects : [String]
+    
     var body: some View {
-        VStack{
-            Text("Field1")
-            Text("Field2")
-            Text("Field3")
-            Text("Field3")
-            Spacer()
+        Text(departName)
+        List{
+            ForEach(subjects, id: \.self){subject in
+                Text(subject)
+            }
         }
-      
+        Spacer()
+        //.navigationBarTitle(departName)
     }
 }
 
-struct DepartmentView_Previews: PreviewProvider {
-    static var previews: some View {
-        DepartmentView()
-    }
-}
