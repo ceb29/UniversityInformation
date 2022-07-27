@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  UniversityInformation
+
+  Created by admin on 7/27/22.
+  
+*/
+
+
+"Departments" = "Departments_ENG";
+"Dept Name: " = "Dept Name_ENG: ";
+"Teachers: " = "Teachers_ENG: ";
+"Publications: " = "Publications_ENG: ";
