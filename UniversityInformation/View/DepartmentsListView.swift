@@ -24,10 +24,8 @@ struct DepartmentsListView: View {
                                     Spacer()
                                 }
                                 HStack{
-                                    Text("Teachers: ")
-                                    Text(String(department.numberOfTeachers))
-                                    Text("Publications: ")
-                                    Text(String(department.numberOfpublicationsPerYr))
+                                    Text("Teachers: " + String(department.numberOfTeachers))
+                                    Text("Publications: " + String(department.numberOfpublicationsPerYr))
                                     Spacer()
                                 }
                             }

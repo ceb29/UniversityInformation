@@ -10,7 +10,6 @@ import Foundation
 struct DepartmentsModel: Codable{
     var departments : [Department]
     
-    
     enum CodingKeys: String, CodingKey{
         case departments = "Departments"
     }

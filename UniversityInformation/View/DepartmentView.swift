@@ -17,9 +17,9 @@ struct DepartmentView: View {
             ForEach(subjects, id: \.self){subject in
                 Text(subject)
             }
+            .listRowInsets(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
         }
         Spacer()
-        //.navigationBarTitle(departName)
     }
 }
 

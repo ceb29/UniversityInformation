@@ -14,7 +14,6 @@ struct ContentView: View {
         NavigationView(){
             DepartmentsListView(departments: departmentsService.departments, error: departmentsService.error)
                 .onAppear {departmentsService.getData()}
-                //.navigationBarTitle("Departments", displayMode: .inline)
                 .navigationBarTitleDisplayMode(.inline)
         }
     }
