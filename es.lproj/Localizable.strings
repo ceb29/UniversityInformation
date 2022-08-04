@@ -6,7 +6,7 @@
   
 */
 
-"Departments" = "Departments_SPA";
-"Dept Name: " = "Dept Name_SPA: ";
-"Teachers: " = "Teachers_SPA: ";
-"Publications: " = "Publications_SPA: ";
+"Departments" = "Departamentos";
+"Dept Name: " = "Dept Nombre: ";
+"Teachers: " = "Maestras: ";
+"Publications: " = "Publicaciones: ";
