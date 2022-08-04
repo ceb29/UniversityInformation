@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DepartmentsListView: View {
-    var departments : [DepartmentViewModel]
+    var departments : [DepartmentViewData]
     var error : Bool
     var body: some View {
         if !error{

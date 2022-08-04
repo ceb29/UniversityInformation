@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var departmentsService = DepartmentApiService()
+    @StateObject private var departmentViewModel = DepartmentViewModel()
     
     var body: some View {
         NavigationView(){
-            DepartmentsListView(departments: departmentsService.departments, error: departmentsService.error)
-                .onAppear {departmentsService.getData()}
+            DepartmentsListView(departments: departmentViewModel.departments, error: departmentViewModel.error)
+                .onAppear {departmentViewModel.getDepartments()}
                 .navigationBarTitleDisplayMode(.inline)
         }
     }
