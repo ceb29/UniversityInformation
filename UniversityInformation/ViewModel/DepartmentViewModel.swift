@@ -12,11 +12,11 @@ class DepartmentViewModel: ObservableObject{
     @Published var error : Bool = false
  
     func getDepartments(){
-        DepartmentApiService.sharedService.getData(comp: {data, error in
+        DepartmentApiService.sharedService.getData(comp: {[weak self] data, error in
             var departmentsViewData : [DepartmentViewData] = []
             
             if error != nil || data == nil{
-                self.setError(status: true)
+                self?.setError(status: true)
                 return
             }
             
@@ -39,8 +39,8 @@ class DepartmentViewModel: ObservableObject{
             }
             
             DispatchQueue.main.async {
-                self.error = false
-                self.departments = departmentsViewData
+                self?.error = false
+                self?.departments = departmentsViewData
             }
         })
     }
