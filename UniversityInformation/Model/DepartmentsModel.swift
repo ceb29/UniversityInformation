@@ -17,7 +17,7 @@ struct DepartmentsModel: Codable{
 
 struct Department : Codable{
     var deptName : String
-    var subjects : [String]
+    var subjects : [String]?
     var numberOfTeachers : Int
     var numberOfpublicationsPerYr : Int? //can be nil
 }
