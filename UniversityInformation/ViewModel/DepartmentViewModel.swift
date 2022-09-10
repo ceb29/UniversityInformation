@@ -35,9 +35,10 @@ class DepartmentViewModel: ObservableObject{
                 }
                 
                 departmentsViewData.append(DepartmentViewData(deptName: department.deptName, subjects: subjects, numberOfTeachers: department.numberOfTeachers, numberOfpublicationsPerYr: department.numberOfpublicationsPerYr!))
-                departmentsViewData = departmentsViewData.sorted {$0.numberOfpublicationsPerYr < $1.numberOfpublicationsPerYr}
             }
             
+            departmentsViewData = departmentsViewData.sorted {$0.numberOfpublicationsPerYr < $1.numberOfpublicationsPerYr}                                              
+                                                          
             DispatchQueue.main.async {
                 self?.error = false
                 self?.departments = departmentsViewData
@@ -47,7 +48,7 @@ class DepartmentViewModel: ObservableObject{
     
     func setError(status : Bool){
         DispatchQueue.main.async {
-            self.error = true
+            self.error = status
         }
     }
 }
